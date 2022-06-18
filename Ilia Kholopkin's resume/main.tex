@@ -1,0 +1,88 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+\usepackage[english,russian]{babel}
+
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Илья Холопкин}
+\tagline{Data scientist}
+\personalinfo{
+  \email{ivkholopkin@edu.hse.ru}
+  \phone{+79204033744}
+  \location{Воронеж, Россия}
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[page1sidebar]{Опыт}
+
+\cvevent{Data scientist}{}{Июнь 2022}{Москва}
+\begin{itemize}
+\item Прохождение практики в учебном центре Вороново
+\smallskip
+\end{itemize}
+
+%\divider
+
+\cvsection{Достижения}
+\smallskip
+\begin{itemize}
+\item Вхождение в топ 10 рейтинга КНАДа
+\smallskip
+\end{itemize}
+
+\cvsection{Навыки}
+
+\cvskill{Python}{5}
+\cvskill{C++}{4}
+\cvskill{Bash}{3}
+\cvskill{LaTex}{4}
+\divider
+
+\cvskill{Английский язык}{4}
+
+\cvsection{Образование и курсы}
+
+\cvevent{Компьютерные науки и анализ данных}{ВШЭ}{Сентябрь 2021 -- Июнь 2025}{}
+
+\cvevent{«Объектно-ориентированное программирование на языке C++»}{Школа программистов}{Сентябрь 2017 -- Июнь 2019}{}
+
+\cvevent{«Промышленное программирование»}{Школа программистов}{ Сентябрь 2019 -- Июнь 2020}{}
+
+\cvevent{«Операционные системы»}{Школа программистов}{Сентябрь 2018 -- Июнь 2019}{}
+
+\cvevent{«Компьютерные сети»}{Школа программистов}{Сентябрь 2018 -- Июнь 2019}{}
+
+\cvevent{«Дискретная математика»}{Школа программистов}{Сентябрь 2018 -- Июнь 2019}{}
+
+\clearpage
+
+\nocite{*}
+
+\end{document}
